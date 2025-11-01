@@ -177,10 +177,11 @@ body::before {
     align-items: center;
     padding: 6rem 2rem 4rem;
     position: relative;
-    background-size: 120%;
-    background-position: 65% center;
+    background-size: 120% 118%;
+    background-position: 65% 0%;
     background-repeat: no-repeat;
     background-attachment: scroll;
+    overflow: hidden;
 }
 
 .hero-overlay {
@@ -889,10 +890,11 @@ section {
 
     .hero {
         background-attachment: scroll;
-        background-size: cover !important;
-        background-position: center 35% !important;
+        background-size: cover 118% !important;
+        background-position: center 0% !important;
         padding: 4rem 1rem 3rem;
         min-height: 70vh;
+        overflow: hidden;
     }
 
     .hero-title {
@@ -983,7 +985,9 @@ section {
     .hero {
         padding: 3rem 1rem 2rem;
         min-height: 60vh;
-        background-position: center 35% !important;
+        background-size: cover 118% !important;
+        background-position: center 0% !important;
+        overflow: hidden;
     }
 
     .hero-title {
