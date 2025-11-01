@@ -629,7 +629,7 @@ section {
     background: var(--bg-glass);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 16px;
     text-align: center;
     border: 1px solid var(--border-color);
@@ -643,9 +643,9 @@ section {
 }
 
 .certificate-icon {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: var(--primary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
 }
 
 .certificate-card h3 {
@@ -889,8 +889,8 @@ section {
 
     .hero {
         background-attachment: scroll;
-        background-size: cover;
-        background-position: center;
+        background-size: cover !important;
+        background-position: center center !important;
         padding: 4rem 1rem 3rem;
     }
 
@@ -924,8 +924,8 @@ section {
     }
 
     .certificates-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .video-grid {
@@ -950,7 +950,12 @@ section {
     }
 
     .certificate-card {
-        padding: 1.5rem;
+        padding: 1rem;
+    }
+
+    .certificate-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
     }
 
     .project-card {
@@ -991,16 +996,37 @@ section {
         left: -2rem;
     }
 
+    .certificates-grid {
+        gap: 0.75rem;
+    }
+
     .certificate-card {
-        padding: 1.25rem;
+        padding: 0.75rem;
+    }
+
+    .certificate-icon {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
     }
 
     .certificate-card h3 {
-        font-size: 1rem;
+        font-size: 0.875rem;
+        margin-bottom: 0.25rem;
     }
 
-    .certificate-card h4 {
-        font-size: 0.875rem;
+    .certificate-issuer {
+        font-size: 0.75rem;
+        margin-bottom: 0.25rem;
+    }
+
+    .certificate-date {
+        font-size: 0.75rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .btn-secondary {
+        padding: 0.5rem 1rem;
+        font-size: 0.75rem;
     }
 
     .skill-tag {
