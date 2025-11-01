@@ -115,6 +115,13 @@ section {
     border-radius: 2px;
 }
 
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 1.125rem;
+    margin-bottom: 3rem;
+}
+
 /* ===== Animations ===== */
 @keyframes fadeInUp {
     from {
