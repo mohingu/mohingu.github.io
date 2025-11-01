@@ -89,17 +89,30 @@ a {
 }
 
 section {
-    padding: 6rem 0;
+    padding: 5rem 2rem;
 }
 
 .section-title {
     font-size: 2.5rem;
+    font-weight: 700;
     text-align: center;
     margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    border-radius: 2px;
 }
 
 /* ===== Animations ===== */
@@ -132,6 +145,18 @@ section {
     }
 }
 
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
 @keyframes slideInFromLeft {
     from {
         opacity: 0;
@@ -158,30 +183,14 @@ section {
 .scroll-indicator {
     position: absolute;
     bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10;
+    animation: bounce 2s infinite;
+    z-index: 2;
 }
 
 .scroll-indicator a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background: var(--bg-glass);
-    backdrop-filter: blur(10px);
-    border: 1px solid var(--border-color);
-    color: var(--text-primary);
-    font-size: 1.25rem;
-    transition: var(--transition);
-    animation: float 2s ease-in-out infinite;
-}
-
-.scroll-indicator a:hover {
-    background: var(--primary-color);
     color: white;
-    transform: translateY(-5px);
+    font-size: 2rem;
+    text-decoration: none;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
