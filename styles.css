@@ -892,6 +892,7 @@ section {
         background-size: cover !important;
         background-position: center center !important;
         padding: 4rem 1rem 3rem;
+        min-height: 70vh;
     }
 
     .hero-title {
@@ -919,8 +920,8 @@ section {
     }
 
     .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .certificates-grid {
@@ -929,7 +930,8 @@ section {
     }
 
     .video-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
 
     .hero-cta {
@@ -960,6 +962,16 @@ section {
 
     .project-card {
         margin-bottom: 0;
+        padding: 1rem;
+    }
+
+    .project-icon {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .project-card h3 {
+        font-size: 1.1rem;
     }
 }
 
@@ -970,6 +982,7 @@ section {
 
     .hero {
         padding: 3rem 1rem 2rem;
+        min-height: 60vh;
     }
 
     .hero-title {
@@ -996,12 +1009,32 @@ section {
         left: -2rem;
     }
 
+    .projects-grid {
+        gap: 0.75rem;
+    }
+
+    .project-card {
+        padding: 0.75rem;
+    }
+
+    .project-icon {
+        font-size: 1.5rem;
+    }
+
+    .project-card h3 {
+        font-size: 0.875rem;
+    }
+
     .certificates-grid {
         gap: 0.75rem;
     }
 
     .certificate-card {
         padding: 0.75rem;
+    }
+
+    .video-grid {
+        gap: 0.75rem;
     }
 
     .certificate-icon {
