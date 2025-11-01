@@ -890,7 +890,7 @@ section {
     .hero {
         background-attachment: scroll;
         background-size: cover !important;
-        background-position: center center !important;
+        background-position: center 35% !important;
         padding: 4rem 1rem 3rem;
         min-height: 70vh;
     }
@@ -930,7 +930,7 @@ section {
     }
 
     .video-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 1rem;
     }
 
@@ -983,6 +983,7 @@ section {
     .hero {
         padding: 3rem 1rem 2rem;
         min-height: 60vh;
+        background-position: center 35% !important;
     }
 
     .hero-title {
@@ -1034,6 +1035,7 @@ section {
     }
 
     .video-grid {
+        grid-template-columns: 1fr;
         gap: 0.75rem;
     }
 
