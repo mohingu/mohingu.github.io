@@ -1,0 +1,75 @@
+/* ===== Contact Section ===== */
+.contact {
+    background: var(--bg-primary);
+}
+
+.contact-content {
+    max-width: 800px;
+    margin: 3rem auto 0;
+}
+
+.contact-info {
+    display: grid;
+    gap: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.5rem;
+    background: var(--bg-glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.contact-item:hover {
+    box-shadow: var(--shadow-glass);
+    transform: translateY(-3px);
+    border-color: var(--primary-color);
+}
+
+.contact-item i {
+    font-size: 2rem;
+    color: var(--primary-color);
+    min-width: 40px;
+}
+
+.contact-item h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+
+.contact-item a {
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.contact-item a:hover {
+    color: var(--secondary-color);
+}
+
+.contact-item p {
+    color: var(--text-secondary);
+}
+
+.social-links-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-links-contact a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.social-links-contact a:hover {
+    color: var(--primary-color);
+}
+

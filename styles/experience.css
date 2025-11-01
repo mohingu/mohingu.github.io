@@ -1,0 +1,90 @@
+/* ===== Experience Section (Timeline Styles) ===== */
+.experience {
+    background: var(--bg-primary);
+}
+
+.education {
+    background: var(--bg-primary);
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    margin-top: 3rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -2.5rem;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    box-shadow: 0 0 0 4px var(--bg-primary), 0 0 0 6px var(--primary-color);
+}
+
+.timeline-content {
+    background: var(--bg-glass);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 1.5rem;
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.timeline-content:hover {
+    box-shadow: var(--shadow-glass);
+    transform: translateX(5px);
+    border-color: var(--primary-color);
+}
+
+.timeline-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.timeline-content h4 {
+    font-size: 1.125rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-date {
+    color: var(--text-secondary);
+    font-size: 0.875rem;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.timeline-description {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.timeline-description li {
+    margin-bottom: 0.5rem;
+    margin-left: 1.25rem;
+}
+
+.timeline-description p {
+    margin-bottom: 0.5rem;
+}
+
