@@ -59,6 +59,16 @@
     overflow: hidden;
 }
 
+/* Vertical Shorts (9:16) - centered row, wraps on narrow screens */
+.video-grid--shorts {
+    grid-template-columns: repeat(auto-fit, 300px);
+    justify-content: center;
+}
+
+.video-embed--short {
+    padding-bottom: 177.78%; /* 9:16 aspect ratio */
+}
+
 .video-embed iframe {
     position: absolute;
     top: 0;

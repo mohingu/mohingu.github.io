@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohin Uddin | Portfolio</title>
-    <meta name="description" content="Portfolio of Mohin Uddin - Developer, Creator, and Tech Enthusiast">
+    <meta name="description" content="Portfolio of Mohin Uddin - Lead Data Scientist specialising in machine learning, pricing models, and risk analytics in insurance.">
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,6 +44,9 @@
             <button id="theme-toggle" aria-label="Toggle dark mode">
                 <i class="fas fa-moon"></i>
             </button>
+            <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
     </nav>
 
@@ -57,6 +60,7 @@
             <div class="hero-cta">
                 <a href="#contact" class="btn btn-primary">Get In Touch</a>
                 <a href="#projects" class="btn btn-secondary">View My Work</a>
+                <a href="assets/Mohin_Uddin_CV.pdf" class="btn btn-secondary" target="_blank" rel="noopener">Download CV</a>
             </div>
             <div class="social-links">
                 <a href="https://github.com/mohingu" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -75,44 +79,110 @@
         <div class="container">
             <h2 class="section-title">About Me</h2>
             <div class="about-content">
-                <div class="about-image">
-                    <img src="images/profile.jpg" alt="Mohin Uddin">
-                </div>
                 <div class="about-text">
                     <p>
-                        Hi there! Thanks for stopping by. I'm an experienced Data Scientist primarily working 
-                        in Insurance, and I'm keen on developing my machine learning and AI skills.
+                        I'm a Lead Data Scientist with over six years' experience building and shipping
+                        machine learning in insurance. At Zego I lead the operationalisation of ML across
+                        pricing and data science - owning the SageMaker infrastructure, automated retraining,
+                        and the production framework that takes models from notebook to live deployment.
                     </p>
                     <p>
-                        With a strong background in mathematical sciences and years of experience across 
-                        multiple insurance companies, I specialize in pricing models, risk analytics, and 
-                        building scalable ML solutions using Python, AWS, and modern data tools.
+                        Previously, at Marshmallow, I built and owned a suite of pricing GBMs that scaled
+                        across new business and generated over &pound;130m in written premium. Across my
+                        career I've delivered models end to end - pricing, risk, and the MLOps and
+                        engineering that keep them running reliably in production.
                     </p>
                     <p>
-                        When I'm not analyzing data or building models, you can find me creating content, 
-                        learning new technologies, and exploring the intersection of mathematics, machine 
-                        learning, and practical business applications.
+                        My foundation is in mathematics (MSc, Durham University), and I care as much about
+                        the systems around a model as the model itself. Outside of work I'm focused on AI
+                        and building things - exploring where machine learning meets real, useful products.
                     </p>
                 </div>
                 <div class="skills">
                     <h3>Technical Skills</h3>
-                    <div class="skills-grid">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">R</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Data Science</span>
-                        <span class="skill-tag">Statistics</span>
-                        <span class="skill-tag">Risk Modeling</span>
-                        <span class="skill-tag">Data Visualization</span>
-                        <span class="skill-tag">Snowflake</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">PyTorch</span>
+                    <div class="skill-category">
+                        <h4>Programming</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">R</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">VBA</span>
+                            <span class="skill-tag">MATLAB</span>
+                            <span class="skill-tag">LaTeX</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Machine Learning</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Scikit-learn</span>
+                            <span class="skill-tag">TensorFlow</span>
+                            <span class="skill-tag">XGBoost</span>
+                            <span class="skill-tag">LightGBM</span>
+                            <span class="skill-tag">Optuna</span>
+                            <span class="skill-tag">Statsmodels</span>
+                            <span class="skill-tag">Pandas</span>
+                            <span class="skill-tag">Polars</span>
+                            <span class="skill-tag">NumPy</span>
+                            <span class="skill-tag">GeoPandas</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Data &amp; Warehousing</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Snowflake</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MSSQL</span>
+                            <span class="skill-tag">dbt</span>
+                            <span class="skill-tag">Alteryx</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Cloud &amp; MLOps</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">SageMaker</span>
+                            <span class="skill-tag">S3</span>
+                            <span class="skill-tag">Athena</span>
+                            <span class="skill-tag">ECR</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">Kubeflow</span>
+                            <span class="skill-tag">Airflow</span>
+                            <span class="skill-tag">ArgoCD</span>
+                            <span class="skill-tag">Buildkite</span>
+                            <span class="skill-tag">Azure DevOps</span>
+                            <span class="skill-tag">GitHub</span>
+                            <span class="skill-tag">Datadog</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>AI Tooling</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Claude Code</span>
+                            <span class="skill-tag">Claude Design</span>
+                            <span class="skill-tag">Cursor</span>
+                            <span class="skill-tag">Granola</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Visualisation</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Looker</span>
+                            <span class="skill-tag">Power BI</span>
+                            <span class="skill-tag">TIBCO Spotfire</span>
+                            <span class="skill-tag">Pyramid Analytics</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Insurance Pricing</h4>
+                        <div class="skills-grid">
+                            <span class="skill-tag">Radar</span>
+                            <span class="skill-tag">Emblem</span>
+                            <span class="skill-tag">Akur8</span>
+                            <span class="skill-tag">Tyche</span>
+                            <span class="skill-tag">Renew</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -132,8 +202,7 @@
                         <h4>Zego</h4>
                         <span class="timeline-date">February 2025 - Present</span>
                         <p class="timeline-description">
-                            London Area, United Kingdom (Hybrid)<br>
-                            <strong>Skills:</strong> AWS, Amazon S3, GitHub, Snowflake, Kubernetes, Kubeflow, Machine Learning, Docker, Data Science, Python, Risk Models, SQL, Microsoft Office
+                            London Area, United Kingdom (Hybrid)
                         </p>
                     </div>
                 </div>
@@ -146,8 +215,7 @@
                         <h4>Marshmallow</h4>
                         <span class="timeline-date">September 2023 - February 2025</span>
                         <p class="timeline-description">
-                            Greater London, England, United Kingdom (Hybrid)<br>
-                            <strong>Skills:</strong> Python, SQL, AWS, AWS SageMaker, Amazon S3, GitHub, Snowflake, Data Science, Docker, Machine Learning, Risk Models, Microsoft Office
+                            Greater London, England, United Kingdom (Hybrid)
                         </p>
                     </div>
                 </div>
@@ -160,8 +228,7 @@
                         <h4>Direct Line Group</h4>
                         <span class="timeline-date">July 2022 - September 2023</span>
                         <p class="timeline-description">
-                            Bromley, England, United Kingdom (Hybrid)<br>
-                            <strong>Skills:</strong> Statistics, Data Visualization, SQL, Python, R, Jira, Agile, OOP, Model Development, GitHub, Amazon S3, AWS
+                            Bromley, England, United Kingdom (Hybrid)
                         </p>
                     </div>
                 </div>
@@ -174,8 +241,7 @@
                         <h4>AEGIS London</h4>
                         <span class="timeline-date">June 2021 - June 2022</span>
                         <p class="timeline-description">
-                            Greater London, England, United Kingdom (Hybrid)<br>
-                            <strong>Skills:</strong> Statistics, Data Visualization, SQL, Python, R, Risk Models, Statistical Inference, Model Development, AWS
+                            Greater London, England, United Kingdom (Hybrid)
                         </p>
                     </div>
                 </div>
@@ -188,8 +254,7 @@
                         <h4>AutoProtect</h4>
                         <span class="timeline-date">January 2021 - April 2021</span>
                         <p class="timeline-description">
-                            Essex, England, United Kingdom<br>
-                            <strong>Skills:</strong> Microsoft Office, Amazon Athena, SQL, VBA, AWS SageMaker, Amazon S3, AWS
+                            Essex, England, United Kingdom
                         </p>
                     </div>
                 </div>
@@ -202,8 +267,7 @@
                         <h4>EY</h4>
                         <span class="timeline-date">September 2019 - October 2020</span>
                         <p class="timeline-description">
-                            Greater London, England, United Kingdom<br>
-                            <strong>Skills:</strong> Alteryx, Data Visualization, Microsoft Office, VBA, Spotfire, Microsoft Power BI, Azure DevOps
+                            Greater London, England, United Kingdom
                         </p>
                     </div>
                 </div>
@@ -225,9 +289,7 @@
                         <span class="timeline-date">2018 - 2019</span>
                         <div class="timeline-description">
                             <p><strong>Modules:</strong> Mathematical Finance, Geometry, Topology, Topics in Algebra & Geometry, Number Theory, Galois Theory</p>
-                            <p><strong>Dissertation:</strong> An in depth Study of Simplicial Homology and Some Applications</p>
-                            <p><strong>Skills:</strong> Probability, LaTeX, Statistics, Statistical Inference, Matlab</p>
-                        </div>
+                            <p><strong>Dissertation:</strong> An in depth Study of Simplicial Homology and Some Applications</p>                        </div>
                     </div>
                 </div>
 
@@ -240,9 +302,7 @@
                         <span class="timeline-date">2015 - 2018</span>
                         <div class="timeline-description">
                             <p><strong>Third Year Modules:</strong> Introduction to Finance, Principles of Finance, Likelihood Inference, Combinatorics, Groups & Symmetry, Differential Equations, Linear Systems</p>
-                            <p><strong>Second Year Modules:</strong> Real Analysis, Complex Analysis, Linear Algebra, Groups & Rings, Statistics II, Probability II</p>
-                            <p><strong>Skills:</strong> Probability, LaTeX, Statistics, Statistical Inference, Matlab</p>
-                        </div>
+                            <p><strong>Second Year Modules:</strong> Real Analysis, Complex Analysis, Linear Algebra, Groups & Rings, Statistics II, Probability II</p>                        </div>
                     </div>
                 </div>
             </div>
@@ -257,8 +317,8 @@
             <div class="projects-grid">
                 <!-- Project Card 1 -->
                 <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/667eea/ffffff?text=2048+Clone" alt="2048 Clone">
+                    <div class="project-image project-image--placeholder">
+                        <span>2048</span>
                     </div>
                     <div class="project-content">
                         <h3>2048 Clone</h3>
@@ -276,53 +336,6 @@
                     </div>
                 </div>
 
-                <!-- Project Card 2 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/4facfe/ffffff?text=Netflix+Clone" alt="Netflix Clone">
-                    </div>
-                    <div class="project-content">
-                        <h3>Netflix Clone</h3>
-                        <p>A responsive Netflix UI clone showcasing modern web development and design skills.</p>
-                        <div class="project-tags">
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Demo
-                            </a>
-                            <a href="https://github.com/mohingu/netflix-clone" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/00d2ff/ffffff?text=Snake+Game" alt="Snake Game">
-                    </div>
-                    <div class="project-content">
-                        <h3>Snake Game</h3>
-                        <p>Classic snake game implemented with vanilla JavaScript, featuring smooth animations and responsive controls.</p>
-                        <div class="project-tags">
-                            <span>JavaScript</span>
-                            <span>HTML5 Canvas</span>
-                            <span>Game Dev</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" target="_blank" class="project-link">
-                                <i class="fas fa-external-link-alt"></i> Demo
-                            </a>
-                            <a href="#" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i> Code
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section>
@@ -364,6 +377,17 @@
                     <p class="certificate-issuer">Udemy</p>
                     <p class="certificate-date">April 2023</p>
                     <a href="https://www.udemy.com/certificate/UC-38e06ed7-6989-4853-bbd7-a35e1c0df7b1/" class="certificate-link" target="_blank">View Certificate</a>
+                </div>
+
+                <!-- Certificate Item: C++ -->
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Beginning C++ Programming - From Beginner to Beyond</h3>
+                    <p class="certificate-issuer">Udemy</p>
+                    <p class="certificate-date">January 2023</p>
+                    <a href="https://www.udemy.com/certificate/UC-69259d59-63e9-4199-a115-d0ba7b55bcbe/" class="certificate-link" target="_blank">View Certificate</a>
                 </div>
 
                 <!-- Certificate Item 4 -->
@@ -475,27 +499,39 @@
                         Subscribe <i class="fas fa-external-link-alt"></i>
                     </a>
                 </div>
-                <div class="video-grid">
-                    <!-- Video 1 -->
+                <div class="video-grid video-grid--shorts">
+                    <!-- Short 1 -->
                     <div class="video-card">
-                        <div class="video-embed">
-                            <iframe 
-                                src="https://www.youtube.com/embed/VIDEO_ID_3" 
-                                title="YouTube video" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        <div class="video-embed video-embed--short">
+                            <iframe
+                                src="https://www.youtube.com/embed/YP0P52M6gT8"
+                                title="YouTube Short"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
                             </iframe>
                         </div>
                     </div>
-                    <!-- Video 2 -->
+                    <!-- Short 2 -->
                     <div class="video-card">
-                        <div class="video-embed">
-                            <iframe 
-                                src="https://www.youtube.com/embed/VIDEO_ID_4" 
-                                title="YouTube video" 
-                                frameborder="0" 
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        <div class="video-embed video-embed--short">
+                            <iframe
+                                src="https://www.youtube.com/embed/TCltbj7tmX8"
+                                title="YouTube Short"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+                    <!-- Short 3 -->
+                    <div class="video-card">
+                        <div class="video-embed video-embed--short">
+                            <iframe
+                                src="https://www.youtube.com/embed/_t6P894VvqE"
+                                title="YouTube Short"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen>
                             </iframe>
                         </div>
@@ -513,10 +549,13 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
+                        <i class="fas fa-link"></i>
                         <div>
-                            <h3>Email</h3>
-                            <a href="mailto:mohin.uddin@example.com">mohin.uddin@example.com</a>
+                            <h3>Social</h3>
+                            <div class="social-links-contact">
+                                <a href="https://github.com/mohingu" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                                <a href="https://www.linkedin.com/in/mohingu/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                            </div>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -524,17 +563,6 @@
                         <div>
                             <h3>Location</h3>
                             <p>London, United Kingdom</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-link"></i>
-                        <div>
-                            <h3>Social</h3>
-                            <div class="social-links-contact">
-                                <a href="https://github.com/mohingu" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                                <a href="https://www.linkedin.com/in/mohingu/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                                <a href="https://youtube.com/@yourchannel" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -545,7 +573,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Mohin Uddin. Built with passion and code.</p>
+            <p>&copy; <span id="footer-year">2026</span> Mohin Uddin &middot; London, UK</p>
             <p class="footer-links">
                 <a href="#home">Back to Top</a>
             </p>
