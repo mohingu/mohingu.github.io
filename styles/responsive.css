@@ -2,8 +2,36 @@
 
 /* Tablets and smaller screens */
 @media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
     .nav-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        background: var(--bg-secondary);
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: var(--shadow-glass);
+        padding: 0.5rem 2rem 1rem;
         display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu .nav-link {
+        display: block;
+        padding: 0.85rem 0;
     }
 
     .hero {
@@ -30,10 +58,6 @@
     .about-content {
         grid-template-columns: 1fr;
         gap: 2rem;
-    }
-
-    .about-image img {
-        max-width: 250px;
     }
 
     .section-title {
@@ -117,10 +141,6 @@
 
     section {
         padding: 2.5rem 1rem;
-    }
-
-    .about-image img {
-        max-width: 200px;
     }
 
     .section-title {

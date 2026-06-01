@@ -29,6 +29,33 @@ themeToggle.addEventListener('click', () => {
     updateThemeIcon();
 });
 
+// ===== Mobile Nav Toggle =====
+const navToggle = document.getElementById('nav-toggle');
+const navMenu = document.querySelector('.nav-menu');
+
+function closeNavMenu() {
+    if (!navToggle || !navMenu) return;
+    navMenu.classList.remove('active');
+    navToggle.setAttribute('aria-expanded', 'false');
+    const icon = navToggle.querySelector('i');
+    icon.classList.add('fa-bars');
+    icon.classList.remove('fa-times');
+}
+
+if (navToggle && navMenu) {
+    navToggle.addEventListener('click', () => {
+        const isOpen = navMenu.classList.toggle('active');
+        navToggle.setAttribute('aria-expanded', String(isOpen));
+        const icon = navToggle.querySelector('i');
+        icon.classList.toggle('fa-bars', !isOpen);
+        icon.classList.toggle('fa-times', isOpen);
+    });
+
+    navMenu.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', closeNavMenu);
+    });
+}
+
 // ===== Smooth Scrolling =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
@@ -132,9 +159,9 @@ if (rotatingTextElement) {
     const titles = [
         'Lead Data Scientist',
         'Machine Learning Engineer',
-        'Insurance Analytics Expert',
-        'Risk Modeling Specialist',
-        'AI & Deep Learning Enthusiast'
+        'ML Infrastructure & MLOps',
+        'AI Builder & Researcher',
+        'Pricing & Risk Modelling'
     ];
     
     let currentIndex = 0;
@@ -257,6 +284,12 @@ if (contactForm) {
         
         // You can add email service integration like EmailJS here
     });
+}
+
+// ===== Dynamic Footer Year =====
+const footerYear = document.getElementById('footer-year');
+if (footerYear) {
+    footerYear.textContent = new Date().getFullYear();
 }
 
 // ===== Console Easter Egg =====

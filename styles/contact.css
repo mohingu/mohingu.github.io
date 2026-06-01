@@ -18,11 +18,10 @@
     gap: 1.5rem;
     align-items: flex-start;
     padding: 1.5rem;
-    background: var(--bg-glass);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: var(--surface);
     border-radius: 16px;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--surface-border);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
     transition: var(--transition);
 }
 
