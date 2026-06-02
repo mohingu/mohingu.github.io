@@ -35,7 +35,7 @@ GitHub Pages from `main` to https://mohingu.github.io.
 
 ## Conventions
 - UK spelling throughout (analyse, specialise, visualisation).
-- Commit with personal email (mohinxp@gmail.com), not the Zego email.
+- Commit with your personal email, not your work email.
 - Work on a feature branch and open a PR into `main`; do not commit to `main`.
 
 ## Deploy
